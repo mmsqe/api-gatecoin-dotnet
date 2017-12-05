@@ -9,7 +9,7 @@ namespace GatecoinServiceInterface.Request{
 [Route("/Okpay/DepositRequest", "DELETE", Summary = @"Cancel okpay deposit", Notes = @"")]
 public class CancelOkpayDeposit : IReturn<CommonResponse>
 {
-[ApiMember(Name = "TxId", Description = "Transaction id to cancel", ParameterType = "query", DataType = "string", IsRequired = true)]
+[ApiMember(Name = "TxId", Description = "Transaction id to cancel", ParameterType = "body", DataType = "string", IsRequired = true)]
 public System.String TxId {get; set; } 
 }
 }

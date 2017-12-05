@@ -9,7 +9,7 @@ namespace GatecoinServiceInterface.Request{
 [Route("/Info/ReferenceLanguage", "PUT", Summary = @"Update user's reference language", Notes = @"")]
 public class UpdateReferenceLanguage : IReturn<CommonResponse>
 {
-[ApiMember(Name = "language", Description = "language", ParameterType = "query", DataType = "string", IsRequired = true)]
+[ApiMember(Name = "language", Description = "language", ParameterType = "body", DataType = "string", IsRequired = true)]
 public System.String language {get; set; } 
 }
 }

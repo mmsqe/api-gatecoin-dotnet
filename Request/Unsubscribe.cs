@@ -11,7 +11,7 @@ public class Unsubscribe : IReturn<CommonResponse>
 {
 [ApiMember(Name = "EmailCode", Description = "Email template code", ParameterType = "path", DataType = "string", IsRequired = false)]
 public System.String EmailCode {get; set; } 
-[ApiMember(Name = "Email", Description = "Email id of the user", ParameterType = "query", DataType = "string", IsRequired = false)]
+[ApiMember(Name = "Email", Description = "Email id of the user", ParameterType = "body", DataType = "string", IsRequired = false)]
 public System.String Email {get; set; } 
 }
 }

@@ -11,9 +11,9 @@ public class UpdateElectronicWalletUserWallets : IReturn<CommonResponse>
 {
 [ApiMember(Name = "DigiCurrency", Description = "Crypto-currency for the address (btc,ltc etc)", ParameterType = "path", DataType = "string", IsRequired = true)]
 public System.String DigiCurrency {get; set; } 
-[ApiMember(Name = "AddressName", Description = "Address name", ParameterType = "query", DataType = "string", IsRequired = true)]
+[ApiMember(Name = "AddressName", Description = "Address name", ParameterType = "body", DataType = "string", IsRequired = true)]
 public System.String AddressName {get; set; } 
-[ApiMember(Name = "NewAddressName", Description = "New address name", ParameterType = "query", DataType = "string", IsRequired = true)]
+[ApiMember(Name = "NewAddressName", Description = "New address name", ParameterType = "body", DataType = "string", IsRequired = true)]
 public System.String NewAddressName {get; set; } 
 }
 }

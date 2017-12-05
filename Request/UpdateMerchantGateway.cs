@@ -11,9 +11,9 @@ public class UpdateMerchantGateway : IReturn<CommonResponse>
 {
 [ApiMember(Name = "Label", Description = "Label", ParameterType = "path", DataType = "string", IsRequired = false)]
 public System.String Label {get; set; } 
-[ApiMember(Name = "Webhook", Description = "Webhook url", ParameterType = "query", DataType = "string", IsRequired = false)]
+[ApiMember(Name = "Webhook", Description = "Webhook url", ParameterType = "body", DataType = "string", IsRequired = false)]
 public System.String Webhook {get; set; } 
-[ApiMember(Name = "ExpirySecond", Description = "Seconds before expiry", ParameterType = "query", DataType = "int", IsRequired = false)]
+[ApiMember(Name = "ExpirySecond", Description = "Seconds before expiry", ParameterType = "body", DataType = "int", IsRequired = false)]
 public Int32 ExpirySecond {get; set; } 
 }
 }

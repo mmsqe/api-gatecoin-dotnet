@@ -9,13 +9,13 @@ namespace GatecoinServiceInterface.Request{
 [Route("/Okpay/Wallet", "POST", Summary = @"Add a new wallet", Notes = @"")]
 public class AddOkPayWallet : IReturn<OkpayTransactionResponse>
 {
-[ApiMember(Name = "WalletId", Description = "Wallet Address", ParameterType = "query", DataType = "string", IsRequired = true)]
+[ApiMember(Name = "WalletId", Description = "Wallet Address", ParameterType = "body", DataType = "string", IsRequired = true)]
 public System.String WalletId {get; set; } 
-[ApiMember(Name = "Label", Description = "Wallet Label", ParameterType = "query", DataType = "string", IsRequired = false)]
+[ApiMember(Name = "Label", Description = "Wallet Label", ParameterType = "body", DataType = "string", IsRequired = false)]
 public System.String Label {get; set; } 
-[ApiMember(Name = "Password", Description = "Require password confirm to add okaypay wallet", ParameterType = "query", DataType = "string", IsRequired = true)]
+[ApiMember(Name = "Password", Description = "Require password confirm to add okaypay wallet", ParameterType = "body", DataType = "string", IsRequired = true)]
 public System.String Password {get; set; } 
-[ApiMember(Name = "ValidationCode", Description = "Validation code", ParameterType = "query", DataType = "string", IsRequired = false)]
+[ApiMember(Name = "ValidationCode", Description = "Validation code", ParameterType = "body", DataType = "string", IsRequired = false)]
 public System.String ValidationCode {get; set; } 
 }
 }

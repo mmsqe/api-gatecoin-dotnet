@@ -9,9 +9,9 @@ namespace GatecoinServiceInterface.Request{
 [Route("/Auth/ForgotPassword", "POST", Summary = @"Request reset password", Notes = @"")]
 public class ForgotPassword : IReturn<CommonResponse>
 {
-[ApiMember(Name = "UserID", Description = "User ID", ParameterType = "query", DataType = "string", IsRequired = true)]
+[ApiMember(Name = "UserID", Description = "User ID", ParameterType = "body", DataType = "string", IsRequired = true)]
 public System.String UserID {get; set; } 
-[ApiMember(Name = "Email", Description = "Registration email", ParameterType = "query", DataType = "string", IsRequired = true)]
+[ApiMember(Name = "Email", Description = "Registration email", ParameterType = "body", DataType = "string", IsRequired = true)]
 public System.String Email {get; set; } 
 }
 }

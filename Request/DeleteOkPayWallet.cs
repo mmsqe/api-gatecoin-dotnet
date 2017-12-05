@@ -11,7 +11,7 @@ public class DeleteOkPayWallet : IReturn<CommonResponse>
 {
 [ApiMember(Name = "Label", Description = "Existing Wallet Label", ParameterType = "path", DataType = "string", IsRequired = true)]
 public System.String Label {get; set; } 
-[ApiMember(Name = "ValidationCode", Description = "Validation code", ParameterType = "query", DataType = "string", IsRequired = false)]
+[ApiMember(Name = "ValidationCode", Description = "Validation code", ParameterType = "body", DataType = "string", IsRequired = false)]
 public System.String ValidationCode {get; set; } 
 }
 }

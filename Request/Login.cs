@@ -9,13 +9,13 @@ namespace GatecoinServiceInterface.Request{
 [Route("/Auth/Login", "POST", Summary = @"Trader session log in.", Notes = @"")]
 public class Login : IReturn<LoginResponse>
 {
-[ApiMember(Name = "UserName", Description = "user name / email", ParameterType = "query", DataType = "string", IsRequired = true)]
+[ApiMember(Name = "UserName", Description = "user name / email", ParameterType = "body", DataType = "string", IsRequired = true)]
 public System.String UserName {get; set; } 
-[ApiMember(Name = "Password", Description = "password", ParameterType = "query", DataType = "string", IsRequired = true)]
+[ApiMember(Name = "Password", Description = "password", ParameterType = "body", DataType = "string", IsRequired = true)]
 public System.String Password {get; set; } 
-[ApiMember(Name = "ValidationCode", Description = "Validation code", ParameterType = "query", DataType = "string", IsRequired = false)]
+[ApiMember(Name = "ValidationCode", Description = "Validation code", ParameterType = "body", DataType = "string", IsRequired = false)]
 public System.String ValidationCode {get; set; } 
-[ApiMember(Name = "CaptchaResponse", Description = "Captcha code", ParameterType = "query", DataType = "string", IsRequired = false)]
+[ApiMember(Name = "CaptchaResponse", Description = "Captcha code", ParameterType = "body", DataType = "string", IsRequired = false)]
 public System.String CaptchaResponse {get; set; }
 }
 }

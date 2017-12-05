@@ -11,7 +11,7 @@ public class GetElectronicWalletTransactionsWithdrawals : IReturn<ElectronicWall
 {
 [ApiMember(Name = "DigiCurrency", Description = "The digital currency to check", ParameterType = "path", DataType = "string", IsRequired = false)]
 public System.String DigiCurrency {get; set; } 
-[ApiMember(Name = "AddressName", Description = "External address name", ParameterType = "query", DataType = "string", IsRequired = false)]
+[ApiMember(Name = "AddressName", Description = "External address name", ParameterType = "body", DataType = "string", IsRequired = false)]
 public System.String AddressName {get; set; } 
 }
 }

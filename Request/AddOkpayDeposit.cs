@@ -9,9 +9,9 @@ namespace GatecoinServiceInterface.Request{
 [Route("/Okpay/DepositRequest", "POST", Summary = @"Deposit fiat currency through Okpay", Notes = @"")]
 public class AddOkpayDeposit : IReturn<OkpayTransactionResponse>
 {
-[ApiMember(Name = "Currency", Description = "Currency to deposit", ParameterType = "query", DataType = "string", IsRequired = true)]
+[ApiMember(Name = "Currency", Description = "Currency to deposit", ParameterType = "body", DataType = "string", IsRequired = true)]
 public System.String Currency {get; set; } 
-[ApiMember(Name = "Amount", Description = "Deposit amount", ParameterType = "query", DataType = "decimal", IsRequired = true)]
+[ApiMember(Name = "Amount", Description = "Deposit amount", ParameterType = "body", DataType = "decimal", IsRequired = true)]
 public System.Decimal Amount {get; set; } 
 }
 }
